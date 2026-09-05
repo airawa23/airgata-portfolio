@@ -1,9 +1,8 @@
 import { Award, ExternalLink } from "lucide-react";
 import devNetBadge from "../assets/images/certificates/DEVASC_Learning_Badge.png";
-import dicodingFabric from "../src/assets/images/certificates/dicoding_fabric.png";
-import karirNexDataAnalyst from "../src/assets/images/certificates/karirnex_Data-Analyst.png";
-import googleVertex from "../src/assets/images/certificates/vertex_google.png";
-
+import dicodingFabric from "../assets/images/certificates/dicoding_fabric.png";
+import karirNexDataAnalyst from "../assets/images/certificates/KarirNex_Data-Analyst.png";
+import googleVertex from "../assets/images/certificates/vertex_google.png";
 
 const certifications = [
   {
@@ -41,7 +40,8 @@ const certifications = [
   },
   {
     id: 4,
-    title: "Build Real World AI Applications with Gemini and Imagen Skill Badge",
+    title:
+      "Build Real World AI Applications with Gemini and Imagen Skill Badge",
     issuer: "Google Cloud",
     year: "2025",
     description:
@@ -50,28 +50,28 @@ const certifications = [
     link: "https://www.credly.com/badges/f8190bbc-ea2b-4fa6-b2c3-31fc8c90641d/linked_in_profile",
     accent: "emerald",
   },
-//   {
-//     id: 5,
-//     title: "Business Analysis Certificate",
-//     issuer: "Professional Certificate",
-//     year: "2024",
-//     description:
-//       "Strengthened the ability to translate business needs into clear requirements, process improvements, and practical solutions.",
-//     image: "",
-//     link: "",
-//     accent: "amber",
-//   },
-//   {
-//     id: 6,
-//     title: "Project Management Certificate",
-//     issuer: "Professional Certificate",
-//     year: "2024",
-//     description:
-//       "Learned the fundamentals of planning, coordinating, and delivering projects through structured and collaborative workflows.",
-//     image: "",
-//     link: "",
-//     accent: "rose",
-//   },
+  //   {
+  //     id: 5,
+  //     title: "Business Analysis Certificate",
+  //     issuer: "Professional Certificate",
+  //     year: "2024",
+  //     description:
+  //       "Strengthened the ability to translate business needs into clear requirements, process improvements, and practical solutions.",
+  //     image: "",
+  //     link: "",
+  //     accent: "amber",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Project Management Certificate",
+  //     issuer: "Professional Certificate",
+  //     year: "2024",
+  //     description:
+  //       "Learned the fundamentals of planning, coordinating, and delivering projects through structured and collaborative workflows.",
+  //     image: "",
+  //     link: "",
+  //     accent: "rose",
+  //   },
 ];
 
 const accentStyles = {
