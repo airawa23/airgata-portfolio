@@ -1,5 +1,9 @@
 import { Award, ExternalLink } from "lucide-react";
 import devNetBadge from "../assets/images/certificates/DEVASC_Learning_Badge.png";
+import dicodingFabric from "../src/assets/images/certificates/dicoding_fabric.png";
+import karirNexDataAnalyst from "../src/assets/images/certificates/karirnex_Data-Analyst.png";
+import googleVertex from "../src/assets/images/certificates/vertex_google.png";
+
 
 const certifications = [
   {
@@ -20,7 +24,7 @@ const certifications = [
     year: "2026",
     description:
       "Learned to use Microsoft Fabric for end-to-end data science workflows, including data exploration, preprocessing, notebook-based modeling, MLflow experiment tracking, and batch prediction.",
-    image: "../src/assets/images/certificates/dicoding_fabric.png",
+    image: dicodingFabric,
     link: "",
     accent: "violet",
   },
@@ -31,7 +35,7 @@ const certifications = [
     year: "2026",
     description:
       "Bootcamp Data Analyst Using Excel, SQL (Google BigQuery), Python (Google Collab), and Google Looker Studio",
-    image: "../src/assets/images/certificates/KarirNex_Data-Analyst.png",
+    image: karirNexDataAnalyst,
     link: "",
     accent: "cyan",
   },
@@ -42,7 +46,7 @@ const certifications = [
     year: "2025",
     description:
       "Complete the introductory Build Real World AI Applications with Gemini and Imagen skill badge to demonstrate skills in the following: image recognition, natural language processing, image generation using Google's powerful Gemini and Imagen models, deploying applications on the Vertex AI platform.",
-    image: "../src/assets/images/certificates/vertex_google.png",
+    image: googleVertex,
     link: "https://www.credly.com/badges/f8190bbc-ea2b-4fa6-b2c3-31fc8c90641d/linked_in_profile",
     accent: "emerald",
   },
