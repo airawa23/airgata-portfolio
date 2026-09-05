@@ -142,7 +142,6 @@ export const projects = [
 
       tools: [
         "Cisco Packet Tracer",
-        "Cisco IOS",
         "TCP/IP",
         "VLAN",
         "DHCP",
