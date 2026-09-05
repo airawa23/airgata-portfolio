@@ -1,7 +1,4 @@
 import { BarChart3, Palette, Code2, Briefcase } from "lucide-react";
-import profileImage1 from "../assets/profile1.png";
-import profileImage2 from "../assets/profile2.png";
-import profileImage3 from "../assets/profile3.JPEG";
 import profileImage4 from "../assets/ise.JPG";
 
 const interests = [
