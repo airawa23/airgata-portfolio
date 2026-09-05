@@ -34,6 +34,10 @@ import datalakehouseEtl from "../assets/images/data-lakehouse/Pentaho_ETL_Dim_ma
 import datalakehouseEtlSqlQuery from "../assets/images/data-lakehouse/ETL_SQL_Query_Dim_Status_Lulus_Grade_Count.png";
 import datalakehouseEtlPipeline from "../assets/images/data-lakehouse/ETL_Pipeline_Fact_Nilai_Mahasiswa.png";
 import datalakehouseThumbnail from "../assets/images/data-lakehouse/thumbnail.png";
+// network project images
+import networkThumbnail from "../assets/images/cisco/thumbnail.png";
+import networkAcl from "../assets/images/cisco/standart-ACL.png";
+import networkDhcp from "../assets/images/cisco/DHCP.png";
 
 export const projects = [
   {
@@ -118,6 +122,56 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Cisco Network Configuration & Troubleshooting",
+    shortDescription:
+      "Enterprise network simulation using Cisco Packet Tracer with VLAN, DHCP, NAT, ACL, and network troubleshooting across multiple network segments.",
+    category: "Networking",
+    techStack: ["Cisco Packet Tracer", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
+    thumbnail: networkThumbnail,
+    color: "#0f766e",
+
+    detail: {
+      problem:
+        "Understanding enterprise networking requires practical experience in configuring network devices, managing IP addresses, controlling traffic, and troubleshooting connectivity issues.",
+
+      objective:
+        "Design and configure a simulated enterprise network using Cisco Packet Tracer while implementing network segmentation, IP address management, traffic control, and connectivity between multiple network segments.",
+
+      process:
+        "Designed network topology → Configured VLAN and IP addressing → Implemented DHCP Server and Relay → Configured Static and Dynamic NAT → Applied Standard and Extended ACL → Tested network connectivity → Troubleshot configuration issues.",
+
+      tools: [
+        "Cisco Packet Tracer",
+        "Cisco IOS",
+        "TCP/IP",
+        "VLAN",
+        "DHCP",
+        "NAT",
+        "ACL",
+      ],
+
+      keyContributions: [
+        "Designed and configured enterprise network topologies using Cisco Packet Tracer.",
+        "Implemented VLAN, DHCP, NAT, and Access Control Lists (ACL) for network segmentation, IP address management, and traffic control.",
+        "Configured DHCP Server and DHCP Relay to provide dynamic IP addressing across multiple network segments.",
+        "Implemented Static and Dynamic NAT for internal-to-external network connectivity.",
+        "Performed connectivity testing and basic network troubleshooting using ping, PDU, and Cisco IOS commands.",
+      ],
+
+      results:
+        "Gained practical understanding of network configuration, segmentation, traffic control, and connectivity testing using Cisco Packet Tracer.",
+
+      progressImages: [
+        networkDhcp,
+        networkAcl,
+      ],
+      resultImage: "",
+      githubLink: "",
+      demoLink: "",
+    },
+  },
+  {
+    id: 4,
     title: "Redesign of PRESISI Polri Mobile App",
     shortDescription:
       "Redesigned the SIAPkerja job application platform interface to reduce friction, improve task efficiency, and enhance overall user experience.",
@@ -149,7 +203,7 @@ export const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "Student Academic Performance Pipeline & Interactive Dashboard",
     shortDescription:
       "Built an end-to-end data pipeline that transforms raw academic records into an interactive dashboard for analyzing student performance.",
@@ -188,7 +242,7 @@ export const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "PinjamBuku — Library Web App",
     shortDescription:
       "Frontend Laravel web application for library book borrowing management with CRUD operations, authentication, and MySQL backend.",
@@ -233,10 +287,10 @@ export const projects = [
 export const skillGroups = [
   {
     id: "data",
-    label: "Data Analytics",
+    label: "Data Analytics, Data Engineering & DB",
     icon: "BarChart3",
     color: "blue",
-    skills: ["Python", "Pandas", "Looker Studio", "Microsoft Excel", "SQL"],
+    skills: ["Python", "Pandas", "Looker Studio", "Microsoft Excel", "SQL", "PostgreSQL", "DBeaver", "Pentaho", "ETL"],
   },
   {
     id: "design",
@@ -262,11 +316,19 @@ export const skillGroups = [
     ],
   },
   {
-    id: "database",
-    label: "Data Engineering & DB",
-    icon: "Database",
-    color: "cyan",
-    skills: ["PostgreSQL", "DBeaver", "Pentaho", "ETL"],
+    id: "networking",
+    label: "Networking",
+    icon: "Network",
+    color: "emerald",
+    skills: [
+      "Cisco Packet Tracer",
+      "TCP/IP",
+      "VLAN",
+      "DHCP",
+      "NAT",
+      "ACL",
+      "Routing & Switching",
+    ],
   },
 ];
 
@@ -360,4 +422,5 @@ export const filterCategories = [
   "Flutter",
   "Laravel",
   "Front-End",
+  "Networking",
 ];

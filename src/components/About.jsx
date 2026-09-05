@@ -1,20 +1,21 @@
 import { BarChart3, Palette, Code2, Briefcase } from "lucide-react";
 import profileImage4 from "../assets/ise.JPG";
+import { Network } from "lucide-react";
 
 const interests = [
+  {
+    icon: Network,
+    title: "Networking",
+    description:
+      "Exploring network configuration, connectivity, and troubleshooting using Cisco technologies.",
+    color: "emerald",
+  },
   {
     icon: BarChart3,
     title: "Data Analytics",
     description:
       "Transforming raw data into actionable business insights through analysis and visualization.",
     color: "blue",
-  },
-  {
-    icon: Briefcase,
-    title: "Business Analysis",
-    description:
-      "Bridging the gap between business needs and technical solutions through structured analysis.",
-    color: "indigo",
   },
   {
     icon: Palette,
@@ -39,6 +40,8 @@ const colorMap = {
   violet:
     "from-violet-500/10 to-violet-600/5 border-violet-500/20 text-violet-400",
   cyan: "from-cyan-500/10 to-cyan-600/5 border-cyan-500/20 text-cyan-400",
+  emerald:
+    "from-emerald-500/10 to-emerald-600/5 border-emerald-500/20 text-emerald-400",
 };
 
 export default function About() {
@@ -67,11 +70,12 @@ export default function About() {
           {/* About text */}
           <div className="space-y-5">
             <p className="text-slate-300 text-base leading-relaxed text-justify">
-              I&apos;m an {" "}
+              I&apos;m an{" "}
               <span className="text-white font-medium">
                 Information Systems
               </span>{" "}
-              Graduate at Institut Teknologi Sepuluh Nopember (ITS), passionate about bridging{" "}
+              Graduate at Institut Teknologi Sepuluh Nopember (ITS), passionate
+              about bridging{" "}
               <span className="text-blue-400 font-medium">
                 data, networking, and technology
               </span>
@@ -79,9 +83,9 @@ export default function About() {
             </p>
             <p className="text-slate-400 text-base leading-relaxed text-justify">
               My academic journey has equipped me with a solid foundation in
-              systems analysis, database management, software engineering, and
-              data analytics allowing me to approach problems from both
-              technical and strategic perspectives.
+              network configuration, systems analysis, database management,
+              software engineering, and data analytics, allowing me to approach
+              technical problems from different perspectives.
             </p>
             <p className="text-slate-400 text-base leading-relaxed text-justify">
               I&apos;m particularly drawn to roles where I can leverage data to

@@ -52,8 +52,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-400 bg-clip-text text-transparent">
             Insights
           </span>
-          ,{" "}
-          <br className="hidden md:block" />
+          , <br className="hidden md:block" />
           Ideas into{" "}
           <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
             Experiences
@@ -62,14 +61,16 @@ export default function Hero() {
 
         {/* Role subtitle */}
         <p className="text-blue-400/80 text-lg md:text-xl font-medium mb-4 tracking-wide">
-          Information Systems&nbsp; ·&nbsp; Data Analyst&nbsp; ·&nbsp; UI/UX Designer&nbsp; ·&nbsp; Web &amp; Mobile Developer
+          Information Systems&nbsp; ·&nbsp; Data Analyst&nbsp; ·&nbsp; UI/UX
+          Designer&nbsp; ·&nbsp; Web &amp; Mobile Developer
         </p>
 
         {/* Description */}
         <p className="text-slate-400 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          A passionate Information Systems graduate with a strong interest in transforming
-          raw data into actionable insights, building intuitive digital experiences, and
-          developing impactful web &amp; mobile applications.
+          Fresh graduate in Information Systems with interests in networking,
+          data analytics, and technology, passionate about solving technical
+          problems, building digital solutions, and continuously learning new
+          technologies.
         </p>
 
         {/* CTA Buttons */}
@@ -79,7 +80,10 @@ export default function Hero() {
             className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-sm hover:from-blue-400 hover:to-indigo-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5"
           >
             View Projects
-            <ExternalLink size={15} className="group-hover:translate-x-0.5 transition-transform" />
+            <ExternalLink
+              size={15}
+              className="group-hover:translate-x-0.5 transition-transform"
+            />
           </button>
           <button
             onClick={scrollToContact}

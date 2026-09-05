@@ -1,4 +1,4 @@
-import { BarChart3, Palette, Code2, Database } from "lucide-react";
+import { BarChart3, Palette, Code2, Database, Network } from "lucide-react";
 import { skillGroups } from "../data/projectsData";
 
 const iconMap = {
@@ -6,6 +6,7 @@ const iconMap = {
   Palette,
   Code2,
   Database,
+  Network,
 };
 
 const colorStyles = {
@@ -32,6 +33,12 @@ const colorStyles = {
     icon: "text-cyan-400",
     header: "text-cyan-400",
     border: "border-cyan-500/20",
+  },
+  emerald: {
+    badge: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20 hover:bg-emerald-500/20 hover:border-emerald-500/40",
+    icon: "text-emerald-400",
+    header: "text-emerald-400",
+    border: "border-emerald-500/20",
   },
 };
 

@@ -24,7 +24,7 @@ export default function Projects() {
             Selected Projects
           </h2>
           <p className="text-slate-400 text-base max-w-xl">
-            A collection of projects spanning data analytics, UI/UX design, mobile,
+            A collection of projects spanning data analytics, networking, UI/UX design, mobile,
             and full-stack web development.
           </p>
         </div>
