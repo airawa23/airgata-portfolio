@@ -1,4 +1,5 @@
 import { Award, ExternalLink } from "lucide-react";
+import devNetBadge from "../assets/images/certificates/DEVASC_Learning_Badge.png";
 
 const certifications = [
   {
@@ -8,7 +9,7 @@ const certifications = [
     year: "2025",
     description:
       "Completed 25+ hands-on labs covering Python, Linux, APIs, network fundamentals, application deployment, security, infrastructure automation, and Cisco platforms.",
-    image: "../src/assets/images/certificates/DEVASC_Learning_Badge.png",
+    image: devNetBadge,
     link: "https://www.credly.com/badges/48683523-af5f-473a-9178-8cbc8f184ba8",
     accent: "blue",
   },
