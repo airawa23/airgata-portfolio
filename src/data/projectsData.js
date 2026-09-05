@@ -20,17 +20,20 @@ import nutrilinkMigration from "../assets/images/NutriLink/migration.png";
 import presisiFigma from "../assets/images/Presisi/figma.png";
 import presisiResult from "../assets/images/Presisi/result.png";
 import presisiDesign from "../assets/images/Presisi/design.png";
+import presisiThumbnail from "../assets/images/Presisi/thumbnail.png";
 // PinjamBuku project images
 import pinjamBukuBooklist from "../assets/images/pinjamBuku/booklist.png";
-import pinjamBukuCart from "../assets/images/pinjamBuku/cart.png";
+import pinjamBukuCart from "../assets/images/pinjamBuku/Cart.png";
 import pinjamBukuRegister from "../assets/images/pinjamBuku/Register.png";
 import pinjamBukuLogin from "../assets/images/pinjamBuku/Login.png";
+import pinjamBukuThumbnail from "../assets/images/pinjamBuku/thumbnail.png";
 // student performance project images
 import datalakehouseErd from "../assets/images/data-lakehouse/Academic_Data_Warehouse_Schema_(ERD).png";
 import datalakehouseDataModel from "../assets/images/data-lakehouse/Data_Warehouse_Schema_Academic_Data_Model.png";
 import datalakehouseEtl from "../assets/images/data-lakehouse/Pentaho_ETL_Dim_matkul_Workflow.png";
 import datalakehouseEtlSqlQuery from "../assets/images/data-lakehouse/ETL_SQL_Query_Dim_Status_Lulus_Grade_Count.png";
 import datalakehouseEtlPipeline from "../assets/images/data-lakehouse/ETL_Pipeline_Fact_Nilai_Mahasiswa.png";
+import datalakehouseThumbnail from "../assets/images/data-lakehouse/thumbnail.png";
 
 export const projects = [
   {
@@ -120,7 +123,7 @@ export const projects = [
       "Redesigned the SIAPkerja job application platform interface to reduce friction, improve task efficiency, and enhance overall user experience.",
     category: "UI/UX",
     techStack: ["Figma", "Canva", "User Research", "Prototyping"],
-    thumbnail: "../src/assets/images/Presisi/thumbnail.png",
+    thumbnail: presisiThumbnail,
     color: "#8b5cf6",
     detail: {
       problem:
@@ -152,7 +155,7 @@ export const projects = [
       "Built an end-to-end data pipeline that transforms raw academic records into an interactive dashboard for analyzing student performance.",
     category: "Data Analytics",
     techStack: ["Pentaho", "ETL", "DBeaver", "Star Schema", "Power BI", "DAX"],
-    thumbnail: "../src/assets/images/data-lakehouse/thumbnail.png",
+    thumbnail: datalakehouseThumbnail,
     color: "#0ea5e9",
     detail: {
       problem:
@@ -177,7 +180,7 @@ export const projects = [
         datalakehouseEtlSqlQuery,
         datalakehouseEtlPipeline,
       ],
-      resultImage: "../src/assets/images/data-lakehouse/thumbnail.png",
+      resultImage: datalakehouseThumbnail,
       results:
         "End-to-end academic performance pipeline and interactive Power BI dashboard capable of dynamically analyzing 70K+ student grade records.",
       githubLink: null,
@@ -191,7 +194,7 @@ export const projects = [
       "Frontend Laravel web application for library book borrowing management with CRUD operations, authentication, and MySQL backend.",
     category: "Laravel",
     techStack: ["Laravel", "PHP", "MySQL", "Blade", "HTML/CSS"],
-    thumbnail: "../src/assets/images/pinjamBuku/thumbnail.png",
+    thumbnail: pinjamBukuThumbnail,
     color: "#f59e0b",
     detail: {
       problem:
@@ -214,7 +217,7 @@ export const projects = [
         pinjamBukuBooklist,
         pinjamBukuCart,
       ],
-      resultImage: "../src/assets/images/pinjamBuku/thumbnail.png",
+      resultImage: pinjamBukuThumbnail,
       results:
         "Fully functional library management web app with authentication, real-time book availability, borrowing history, and an admin dashboard.",
       githubLink: "https://github.com/airawa23/pinjamBuku_laravelProject",
