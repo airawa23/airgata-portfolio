@@ -47,6 +47,7 @@ import iseExperienceImage3 from "../assets/images/experience/ise_event5.jpeg";
 import gemastikExperienceImage from "../assets/images/experience/gemastik.jpeg";
 import presisiExperienceImage1 from "../assets/images/experience/gemastik_1.jpeg";
 import ilitsExperienceImage from "../assets/images/experience/visit_ilits.jpg";
+import avalonExperienceImage from "../assets/images/experience/avalon.jpeg";
 
 
 export const projects = [
@@ -396,6 +397,7 @@ export const experiences = [
     organizationFull: "Avalon AI Community",
     period: "2024",
     type: "Community",
+    images: [avalonExperienceImage],
     description:
       "Collected and summarized the latest artificial intelligence developments from global and local sources, then collaborated with the media team to distribute content on social media platforms.",
     tags: ["Artificial Intelligence", "Content Research", "Social Media"],
