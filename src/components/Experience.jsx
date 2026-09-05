@@ -27,7 +27,10 @@ export default function Experience() {
 
           <div className="space-y-6">
             {experiences.map((exp, idx) => {
-              const typeStyle = typeColors[exp.type] || "bg-slate-500/10 text-slate-400 border-slate-500/20";
+              const typeStyle =
+                typeColors[exp.type] ||
+                "bg-slate-500/10 text-slate-400 border-slate-500/20";
+              const experienceImages = exp.images || (exp.image ? [exp.image] : []);
               return (
                 <div key={exp.id} className="relative md:pl-20 group">
                   {/* Timeline dot */}
@@ -41,20 +44,44 @@ export default function Experience() {
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                       <div>
                         <div className="flex flex-wrap items-center gap-2 mb-1">
-                          <span className={`px-2.5 py-0.5 rounded-md text-xs font-medium border ${typeStyle}`}>
+                          <span
+                            className={`px-2.5 py-0.5 rounded-md text-xs font-medium border ${typeStyle}`}
+                          >
                             {exp.type}
                           </span>
-                          <span className="text-xs text-slate-500">{exp.period}</span>
+                          <span className="text-xs text-slate-500">
+                            {exp.period}
+                          </span>
                         </div>
-                        <h3 className="text-white font-semibold text-base">{exp.role}</h3>
-                        <p className="text-sm font-medium" style={{ color: exp.color }}>
+                        <h3 className="text-white font-semibold text-base">
+                          {exp.role}
+                        </h3>
+                        <p
+                          className="text-sm font-medium"
+                          style={{ color: exp.color }}
+                        >
                           {exp.organization}
                         </p>
                         {exp.organizationFull !== exp.organization && (
-                          <p className="text-xs text-slate-500 mt-0.5">{exp.organizationFull}</p>
+                          <p className="text-xs text-slate-500 mt-0.5">
+                            {exp.organizationFull}
+                          </p>
                         )}
                       </div>
                     </div>
+
+                    {experienceImages.length > 0 && (
+                      <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 max-w-3xl mb-5">
+                        {experienceImages.map((image, imageIndex) => (
+                          <img
+                            key={`${exp.id}-${imageIndex}`}
+                            src={image}
+                            alt={`${exp.organization} activity ${imageIndex + 1}`}
+                            className="w-full aspect-[4/3] object-cover rounded-xl border border-white/[0.07]"
+                          />
+                        ))}
+                      </div>
+                    )}
 
                     <p className="text-slate-400 text-sm leading-relaxed mb-4">
                       {exp.description}

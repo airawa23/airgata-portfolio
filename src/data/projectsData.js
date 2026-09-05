@@ -3,6 +3,7 @@
 // Edit this file to add, remove, or update projects, skills, and experience.
 // ============================================================
 
+
 import nusadataDashboard from "../assets/images/nusadata/nusadata.png";
 import nusadataFigma from "../assets/images/nusadata/design-figma.png";
 import nusadataData from "../assets/images/nusadata/raw-data.png";
@@ -38,6 +39,15 @@ import datalakehouseThumbnail from "../assets/images/data-lakehouse/thumbnail.pn
 import networkThumbnail from "../assets/images/cisco/thumbnail.png";
 import networkAcl from "../assets/images/cisco/standart-ACL.png";
 import networkDhcp from "../assets/images/cisco/DHCP.png";
+//experience project images
+import iseExperienceImage from "../assets/images/experience/ise_event.JPG";
+import iseExperienceImage1 from "../assets/images/experience/ise_event2.jpeg";
+import iseExperienceImage2 from "../assets/images/experience/ise_event3.jpeg";
+import iseExperienceImage3 from "../assets/images/experience/ise_event5.jpeg";
+import gemastikExperienceImage from "../assets/images/experience/gemastik.jpeg";
+import presisiExperienceImage1 from "../assets/images/experience/gemastik_1.jpeg";
+import ilitsExperienceImage from "../assets/images/experience/visit_ilits.jpg";
+
 
 export const projects = [
   {
@@ -140,14 +150,7 @@ export const projects = [
       process:
         "Designed network topology → Configured VLAN and IP addressing → Implemented DHCP Server and Relay → Configured Static and Dynamic NAT → Applied Standard and Extended ACL → Tested network connectivity → Troubleshot configuration issues.",
 
-      tools: [
-        "Cisco Packet Tracer",
-        "TCP/IP",
-        "VLAN",
-        "DHCP",
-        "NAT",
-        "ACL",
-      ],
+      tools: ["Cisco Packet Tracer", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
 
       keyContributions: [
         "Designed and configured enterprise network topologies using Cisco Packet Tracer.",
@@ -160,10 +163,7 @@ export const projects = [
       results:
         "Gained practical understanding of network configuration, segmentation, traffic control, and connectivity testing using Cisco Packet Tracer.",
 
-      progressImages: [
-        networkDhcp,
-        networkAcl,
-      ],
+      progressImages: [networkDhcp, networkAcl],
       resultImage: "",
       githubLink: "",
       demoLink: "",
@@ -289,7 +289,17 @@ export const skillGroups = [
     label: "Data Analytics, Data Engineering & DB",
     icon: "BarChart3",
     color: "blue",
-    skills: ["Python", "Pandas", "Looker Studio", "Microsoft Excel", "SQL", "PostgreSQL", "DBeaver", "Pentaho", "ETL"],
+    skills: [
+      "Python",
+      "Pandas",
+      "Looker Studio",
+      "Microsoft Excel",
+      "SQL",
+      "PostgreSQL",
+      "DBeaver",
+      "Pentaho",
+      "ETL",
+    ],
   },
   {
     id: "design",
@@ -343,6 +353,12 @@ export const experiences = [
     organizationFull: "Information Systems Expo (ISE!) 2024",
     period: "Jun 2024 – Jan 2025",
     type: "Organization",
+    images: [
+        iseExperienceImage,
+        iseExperienceImage1,
+        iseExperienceImage2,
+        iseExperienceImage3
+    ],
     description:
       "Conducted market research, sourced and negotiated with vendors, and managed procurement, payment workflows, and production monitoring for 230+ committee kits. Coordinated product and financial communications across committees, contributing to the highest profit among ISE! 2024 fundraising divisions.",
     tags: ["Fundraising", "Vendor Management", "Procurement", "Budgeting"],
@@ -367,6 +383,7 @@ export const experiences = [
     organizationFull: "Gemastik Cyber Security Division",
     period: "Jun 2024 – Sep 2024",
     type: "Organization",
+    images: [gemastikExperienceImage, presisiExperienceImage1],
     description:
       "Coordinated data submission and communication for 5+ Gemastik teams, contributing to three teams qualifying for the preliminary round and one team receiving a Consolation Prize. Also guided workshops in the Cyber Security division.",
     tags: ["Cyber Security", "Coordination", "Workshop Management"],
@@ -403,6 +420,7 @@ export const experiences = [
     organizationFull: "Forda Yogyakarta — Ini Lho ITS! 2023",
     period: "Nov 2022 – Feb 2023",
     type: "Organization",
+    images: [ilitsExperienceImage],
     description:
       "Compiled activity proposals and school visit permit letters, and managed visit documentation from several schools during the Ini Lho ITS! 2023 program.",
     tags: ["Administration", "Documentation", "Event Support"],
