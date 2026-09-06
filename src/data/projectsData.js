@@ -3,7 +3,6 @@
 // Edit this file to add, remove, or update projects, skills, and experience.
 // ============================================================
 
-
 import nusadataDashboard from "../assets/images/nusadata/nusadata.png";
 import nusadataFigma from "../assets/images/nusadata/design-figma.png";
 import nusadataData from "../assets/images/nusadata/raw-data.png";
@@ -48,7 +47,12 @@ import gemastikExperienceImage from "../assets/images/experience/gemastik.jpeg";
 import presisiExperienceImage1 from "../assets/images/experience/gemastik_1.jpeg";
 import ilitsExperienceImage from "../assets/images/experience/visit_ilits.jpg";
 import avalonExperienceImage from "../assets/images/experience/avalon.jpeg";
-
+// order fulfillment project images
+import orderFulfillmentThumbnail from "../assets/images/BPMN/thumbnail.png";
+// dapuRame project images
+import dapuRameThumbnail from "../assets/images/dapurame/thumbnail.png";
+import dapuRameFigma from "../assets/images/dapurame/figma.png";
+import dapuRameResult from "../assets/images/dapurame/result.png";
 
 export const projects = [
   {
@@ -278,6 +282,73 @@ export const projects = [
       demoLink: null,
     },
   },
+  {
+    id: 7,
+    title: "DapuRame Recipe & Nutrition Mobile App",
+    shortDescription:
+      "A mobile app for discovering recipes and tracking nutritional information.",
+    category: "Flutter",
+    techStack: ["Figma", "Flutter", "Dart", "Firebase"],
+    thumbnail: dapuRameThumbnail,
+    color: "#8b5cf6",
+    detail: {
+      problem:
+        "Users need a simple and engaging way to discover recipes, manage their cooking activities, and stay updated with relevant information in one platform.",
+      objective:
+        "Design an intuitive recipe and nutrition platform that simplifies recipe discovery and provides users with relevant updates through a clear and user-centered interface.",
+      process:
+        "User needs identification → Information architecture → User flow design → Homepage design → Notification feature design → High-fidelity prototyping → UI refinement.",
+      tools: ["Figma", "Flutter", "Firebase", "UI/UX Design", "Prototyping"],
+      keyContributions: [ 
+        "Designed the Homepage to provide an intuitive entry point for discovering recipes and accessing key features", 
+        "Designed the Notification feature to deliver relevant updates and activities in a clear and organized interface", 
+        "Developed user flows to ensure smooth navigation between key features", 
+        "Created high-fidelity UI designs with a focus on visual hierarchy, usability, and consistency", 
+        "Applied user-centered design principles to improve the overall user experience" 
+      ],
+      progressImages: [
+        dapuRameFigma,
+        dapuRameThumbnail
+      ],
+      resultImage: dapuRameResult,
+      results:
+        "A user-centered mobile app interface featuring an intuitive Homepage and Notification system that helps users discover recipes, access important updates, and navigate the platform more easily.",
+      githubLink: "https://github.com/bachtiarrizkyal/dapurame",
+      demoLink: null,
+    },
+  },
+  {
+    id: 8,
+    title: "Business Process Modeling – Customer Order Fulfillment",
+    shortDescription:
+      "Modeled an end-to-end customer order fulfillment process using BPMN to visualize inventory verification, production, customization, payment, and delivery workflows.",
+    category: "Business Process",
+    techStack: ["BPMN.io", "Business Process Modeling"],
+    thumbnail: orderFulfillmentThumbnail,
+    color: "#8b5cf6",
+    detail: {
+      problem:
+        "The customer order fulfillment process involves multiple decision points and parallel activities, making it difficult to understand the complete workflow and the different paths based on product and raw material availability.",
+      objective:
+        "Model the end-to-end customer order fulfillment process using BPMN to clearly visualize decision points, production workflows, and parallel activities from order verification to completion.",
+      process:
+        "Customer order received → Product availability verification → Raw material availability check → Raw material procurement (if limited) → Product production → Customization → Order confirmation → Parallel shipping and payment processes → Order completion.",
+      tools: ["BPMN.io", "Business Process Modeling"],
+      keyContributions: [
+        "Modeled the end-to-end customer order fulfillment process from incoming orders to order completion",
+        "Identified and modeled product availability and raw material availability decision points using Exclusive (XOR) Gateways",
+        "Designed alternative process flows for available and unavailable inventory conditions",
+        "Modeled procurement and production activities when raw materials are insufficient",
+        "Represented parallel shipping and payment activities using Parallel (AND) Gateways",
+        "Structured the BPMN workflow to improve process visibility and understanding of business operations",
+      ],
+      resultImage: orderFulfillmentThumbnail,
+      results:
+        "A structured BPMN model representing the complete customer order fulfillment workflow, including inventory verification, procurement, production, customization, order confirmation, shipping, invoicing, and payment.",
+      githubLink: null,
+      demoLink: null,
+    },
+  },
 ];
 
 // ============================================================
@@ -355,10 +426,10 @@ export const experiences = [
     period: "Jun 2024 – Jan 2025",
     type: "Organization",
     images: [
-        iseExperienceImage,
-        iseExperienceImage1,
-        iseExperienceImage2,
-        iseExperienceImage3
+      iseExperienceImage,
+      iseExperienceImage1,
+      iseExperienceImage2,
+      iseExperienceImage3,
     ],
     description:
       "Conducted market research, sourced and negotiated with vendors, and managed procurement, payment workflows, and production monitoring for 230+ committee kits. Coordinated product and financial communications across committees, contributing to the highest profit among ISE! 2024 fundraising divisions.",
@@ -442,4 +513,5 @@ export const filterCategories = [
   "Laravel",
   "Front-End",
   "Networking",
+  "Business Process",
 ];

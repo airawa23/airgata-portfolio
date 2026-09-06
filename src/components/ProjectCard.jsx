@@ -8,6 +8,7 @@ const categoryColors = {
   Laravel: "bg-amber-500/10 text-amber-400 border-amber-500/20",
   "Front-End": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
   Networking: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+  "Business Process": "bg-purple-500/10 text-purple-400 border-purple-500/20",
 };
 
 const defaultColor = "bg-slate-500/10 text-slate-400 border-slate-500/20";
