@@ -21,11 +21,12 @@ export default function Projects() {
             Portfolio
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Selected Projects
+            Projects Documentation
           </h2>
-          <p className="text-slate-400 text-base max-w-xl">
-            A collection of projects spanning data analytics, networking, UI/UX design, mobile,
-            and full-stack web development.
+          <p className="text-slate-400 text-base max-w-3xl">
+            A collection of projects developed throughout my academic journey,
+            covering data analytics, business process modeling, networking,
+            UI/UX design, mobile, and full-stack web development.
           </p>
         </div>
 

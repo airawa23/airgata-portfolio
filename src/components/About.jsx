@@ -82,16 +82,20 @@ export default function About() {
               .
             </p>
             <p className="text-slate-400 text-base leading-relaxed text-justify">
-              My academic journey has equipped me with a solid foundation in
-              network configuration, systems analysis, database management,
-              software engineering, and data analytics, allowing me to approach
-              technical problems from different perspectives.
+              My academic and project experience has equipped me with a solid
+              foundation in network configuration, systems analysis, database
+              management, software engineering, and data analytics. I have
+              experience working with data through ETL processes, dashboard
+              development, and data visualization, using tools such as Power BI
+              and Looker Studio.
             </p>
             <p className="text-slate-400 text-base leading-relaxed text-justify">
-              I&apos;m particularly drawn to roles where I can leverage data to
-              drive decisions, design better user experiences, or build scalable
-              digital solutions. I thrive in collaborative environments and
-              enjoy contributing across disciplines.
+              I&apos;m particularly drawn to roles where I can leverage data and
+              technology to support decision-making, analyze business processes,
+              and improve operational performance. I thrive in collaborative
+              environments, enjoy solving problems from different perspectives,
+              and am eager to contribute across technical and business-oriented
+              projects.
             </p>
 
             {/* Quick stats */}

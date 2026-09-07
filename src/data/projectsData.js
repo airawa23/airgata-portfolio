@@ -58,6 +58,16 @@ import orderFulfillmentThumbnail from "../assets/images/BPMN/thumbnail.png";
 import dapuRameThumbnail from "../assets/images/dapurame/thumbnail.png";
 import dapuRameFigma from "../assets/images/dapurame/figma.png";
 import dapuRameResult from "../assets/images/dapurame/result.png";
+// netflixers project images
+import netflixersThumbnail from "../assets/images/netflixers/thumbnail.png";
+import netflixersSeqDiagram from "../assets/images/netflixers/SequenceDiagram_Notification.jpg";
+import netflixersRobustDiagramNotif from "../assets/images/netflixers/RobustnessDiagram_NotificationNetflixers.jpg";
+import netflixersDomainModel from "../assets/images/netflixers/Netflixers_DomainModel.jpg";
+import netflixersRobustDiagramLogOut from "../assets/images/netflixers/RobustnessDiagram_LogOutNetflixers.png";
+import netflixersRobustDiagramEditAkun from "../assets/images/netflixers/RobustnessDiagram_ProsesEditAkunNetflixers.png";
+import netflixersError from "../assets/images/netflixers/error.png";
+import netflixersInspect from "../assets/images/netflixers/inspect.png";
+import netflixersNotification from "../assets/images/netflixers/notification_process.png";
 
 export const projects = [
   {
@@ -146,7 +156,15 @@ export const projects = [
     shortDescription:
       "Enterprise network simulation using Cisco Packet Tracer with VLAN, DHCP, NAT, ACL, and network troubleshooting across multiple network segments.",
     category: "Networking",
-    techStack: ["Cisco Packet Tracer", "Linux", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
+    techStack: [
+      "Cisco Packet Tracer",
+      "Linux",
+      "TCP/IP",
+      "VLAN",
+      "DHCP",
+      "NAT",
+      "ACL",
+    ],
     thumbnail: networkThumbnail,
     color: "#0f766e",
 
@@ -160,7 +178,15 @@ export const projects = [
       process:
         "Designed network topology → Configured VLAN and IP addressing → Implemented DHCP Server and Relay → Configured Static and Dynamic NAT → Applied Standard and Extended ACL → Tested network connectivity → Troubleshot configuration issues.",
 
-      tools: ["Cisco Packet Tracer", "Linux", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
+      tools: [
+        "Cisco Packet Tracer",
+        "Linux",
+        "TCP/IP",
+        "VLAN",
+        "DHCP",
+        "NAT",
+        "ACL",
+      ],
 
       keyContributions: [
         "Designed and configured enterprise network topologies using Cisco Packet Tracer.",
@@ -174,13 +200,13 @@ export const projects = [
         "Gained practical understanding of network configuration, segmentation, traffic control, and connectivity testing using Cisco Packet Tracer.",
 
       progressImages: [
-        networkDhcp, 
+        networkDhcp,
         networkAcl,
         networkRoute,
         networkVlan,
         networkDhcpReq,
         networkDhcpPool,
-        networkDetailPc
+        networkDetailPc,
       ],
       resultImage: "",
       githubLink: "",
@@ -260,7 +286,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "PinjamBuku — Library Web App",
+    title: "PinjamBuku - Library Web App",
     shortDescription:
       "Frontend Laravel web application for library book borrowing management with CRUD operations, authentication, and MySQL backend.",
     category: "Laravel",
@@ -312,17 +338,14 @@ export const projects = [
       process:
         "User needs identification → Information architecture → User flow design → Homepage design → Notification feature design → High-fidelity prototyping → UI refinement.",
       tools: ["Figma", "Flutter", "Firebase", "UI/UX Design", "Prototyping"],
-      keyContributions: [ 
-        "Designed the Homepage to provide an intuitive entry point for discovering recipes and accessing key features", 
-        "Designed the Notification feature to deliver relevant updates and activities in a clear and organized interface", 
-        "Developed user flows to ensure smooth navigation between key features", 
-        "Created high-fidelity UI designs with a focus on visual hierarchy, usability, and consistency", 
-        "Applied user-centered design principles to improve the overall user experience" 
+      keyContributions: [
+        "Designed the Homepage to provide an intuitive entry point for discovering recipes and accessing key features",
+        "Designed the Notification feature to deliver relevant updates and activities in a clear and organized interface",
+        "Developed user flows to ensure smooth navigation between key features",
+        "Created high-fidelity UI designs with a focus on visual hierarchy, usability, and consistency",
+        "Applied user-centered design principles to improve the overall user experience",
       ],
-      progressImages: [
-        dapuRameFigma,
-        dapuRameThumbnail
-      ],
+      progressImages: [dapuRameFigma, dapuRameThumbnail],
       resultImage: dapuRameResult,
       results:
         "A user-centered mobile app interface featuring an intuitive Homepage and Notification system that helps users discover recipes, access important updates, and navigate the platform more easily.",
@@ -359,6 +382,90 @@ export const projects = [
       results:
         "A structured BPMN model representing the complete customer order fulfillment workflow, including inventory verification, procurement, production, customization, order confirmation, shipping, invoicing, and payment.",
       githubLink: null,
+      demoLink: null,
+    },
+  },
+  {
+    id: 9,
+
+    title: "Netflixers – Netflix Sharing Account Management System",
+
+    shortDescription:
+      "Developed a web-based system for managing Netflix sharing services, including account management, transactions, profile allocation, and subscription period monitoring.",
+
+    category: "Laravel",
+
+    techStack: [
+      "Web Development",
+      "Database Management",
+      "Visual Paradigm",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Sequence Diagram",
+      "Robustness Diagram",
+      "HTML/CSS",
+      "Laragon",
+      "Blade Templates",
+      "Domain Modeling",
+    ],
+
+    thumbnail: netflixersThumbnail,
+
+    color: "#ef4444",
+
+    detail: {
+      problem:
+        "Managing Netflix sharing services involves multiple activities, including account management, profile allocation, transactions, subscription periods, and access monitoring. Without a centralized system, these activities can become difficult to track and manage efficiently.",
+
+      objective:
+        "Develop a centralized web-based system to organize Netflix sharing service operations, simplify account and transaction management, and provide better monitoring of account access and subscription periods.",
+
+      process:
+        "Account registration → Netflix account management → Profile allocation → Customer transaction → Subscription period monitoring → Account access monitoring → Service completion.",
+
+      tools: [
+        "Web Development",
+        "Database Management",
+        "Visual Paradigm",
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Sequence Diagram",
+        "Robustness Diagram",
+        "HTML/CSS",
+        "Laragon",
+        "Blade Templates",
+        "Domain Modeling",
+      ],
+
+      keyContributions: [
+        "Designed and implemented the notification feature to deliver relevant updates to users",
+        "Developed the edit account feature to allow users to update their account information",
+        "Implemented the logout feature to provide a secure and convenient sign-out process",
+        "Designed clear user flows for notification, account editing, and logout interactions",
+        "Integrated the features into the system to support a consistent user experience",
+        "Improved usability by making account management and system access easier for users",
+      ],
+
+      progressImages: [
+        netflixersDomainModel,
+        netflixersRobustDiagramNotif,
+        netflixersRobustDiagramLogOut,
+        netflixersRobustDiagramEditAkun,
+        netflixersSeqDiagram,
+        netflixersError,
+        netflixersInspect,
+        netflixersNotification,
+      ],
+
+      resultImage: netflixersThumbnail,
+
+      results:
+        "A centralized Netflix sharing management system that organizes account, profile, transaction, and subscription data while improving monitoring, transparency, and operational efficiency.",
+
+      githubLink: "https://github.com/jasmrntha/pppl-c-12-netflixers",
+
       demoLink: null,
     },
   },
