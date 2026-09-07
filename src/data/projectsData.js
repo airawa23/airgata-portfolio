@@ -38,6 +38,11 @@ import datalakehouseThumbnail from "../assets/images/data-lakehouse/thumbnail.pn
 import networkThumbnail from "../assets/images/cisco/thumbnail.png";
 import networkAcl from "../assets/images/cisco/standart-ACL.png";
 import networkDhcp from "../assets/images/cisco/DHCP.png";
+import networkRoute from "../assets/images/cisco/name_route.png";
+import networkVlan from "../assets/images/cisco/show_vlan.png";
+import networkDhcpReq from "../assets/images/cisco/dhcp_req.png";
+import networkDhcpPool from "../assets/images/cisco/dhcp_pool.png";
+import networkDetailPc from "../assets/images/cisco/detail_pc.png";
 //experience project images
 import iseExperienceImage from "../assets/images/experience/ise_event.JPG";
 import iseExperienceImage1 from "../assets/images/experience/ise_event2.jpeg";
@@ -141,7 +146,7 @@ export const projects = [
     shortDescription:
       "Enterprise network simulation using Cisco Packet Tracer with VLAN, DHCP, NAT, ACL, and network troubleshooting across multiple network segments.",
     category: "Networking",
-    techStack: ["Cisco Packet Tracer", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
+    techStack: ["Cisco Packet Tracer", "Linux", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
     thumbnail: networkThumbnail,
     color: "#0f766e",
 
@@ -155,7 +160,7 @@ export const projects = [
       process:
         "Designed network topology → Configured VLAN and IP addressing → Implemented DHCP Server and Relay → Configured Static and Dynamic NAT → Applied Standard and Extended ACL → Tested network connectivity → Troubleshot configuration issues.",
 
-      tools: ["Cisco Packet Tracer", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
+      tools: ["Cisco Packet Tracer", "Linux", "TCP/IP", "VLAN", "DHCP", "NAT", "ACL"],
 
       keyContributions: [
         "Designed and configured enterprise network topologies using Cisco Packet Tracer.",
@@ -168,7 +173,15 @@ export const projects = [
       results:
         "Gained practical understanding of network configuration, segmentation, traffic control, and connectivity testing using Cisco Packet Tracer.",
 
-      progressImages: [networkDhcp, networkAcl],
+      progressImages: [
+        networkDhcp, 
+        networkAcl,
+        networkRoute,
+        networkVlan,
+        networkDhcpReq,
+        networkDhcpPool,
+        networkDetailPc
+      ],
       resultImage: "",
       githubLink: "",
       demoLink: "",
@@ -364,6 +377,9 @@ export const skillGroups = [
     skills: [
       "Python",
       "Pandas",
+      "Power BI",
+      "BPMN.io",
+      "Erd",
       "Looker Studio",
       "Microsoft Excel",
       "SQL",
@@ -403,6 +419,7 @@ export const skillGroups = [
     color: "emerald",
     skills: [
       "Cisco Packet Tracer",
+      "Linux",
       "TCP/IP",
       "VLAN",
       "DHCP",
