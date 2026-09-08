@@ -68,6 +68,9 @@ import netflixersRobustDiagramEditAkun from "../assets/images/netflixers/Robustn
 import netflixersError from "../assets/images/netflixers/error.png";
 import netflixersInspect from "../assets/images/netflixers/inspect.png";
 import netflixersNotification from "../assets/images/netflixers/notification_process.png";
+// sql analysis project images
+import sqlAnalysisQueryResult1 from "../assets/images/sql/1.png";
+import sqlAnalysisQueryResult2 from "../assets/images/sql/2.png";
 
 export const projects = [
   {
@@ -469,6 +472,74 @@ export const projects = [
       demoLink: null,
     },
   },
+  {
+  id: 10,
+
+  title: "Customer Transaction & Sales Analysis",
+
+  shortDescription:
+    "Analyzed transaction data using PostgreSQL to identify high-value customers and evaluate annual sales performance across customer clusters.",
+
+  category: "Data Analytics",
+
+  techStack: [
+    "Data Analytics",
+    "SQL",
+    "PostgreSQL",
+    "DBeaver",
+    "Data Aggregation",
+    "Data Filtering",
+    "Data Joining",
+  ],
+
+  thumbnail: sqlAnalysisQueryResult1,
+
+  color: "#3b82f6",
+
+  detail: {
+    problem:
+      "The transaction dataset contains customer payment records and cluster information that can be analyzed to understand customer spending behavior and sales performance. Without proper analysis, it can be difficult to identify high-value customers and evaluate sales performance across different customer clusters and years.",
+
+    objective:
+      "Analyze successful transaction data using SQL to identify the top-spending users and evaluate annual sales performance across customer clusters.",
+
+    process:
+      "Transaction data exploration → Filter successful transactions → Aggregate customer spending → Rank top-spending users → Extract transaction year → Join transaction and cluster data → Compare annual sales performance.",
+
+    tools: [
+      "Data Analytics",
+      "SQL",
+      "PostgreSQL",
+      "DBeaver",
+      "Data Aggregation",
+      "Data Filtering",
+      "Data Joining",
+    ],
+
+    keyContributions: [
+      "Analyzed transaction data using PostgreSQL and DBeaver to answer business-oriented analytical questions",
+      "Filtered transaction records to include only successful payments",
+      "Calculated total customer spending using SUM() and GROUP BY",
+      "Identified and ranked the top 10 users based on total transaction spending",
+      "Extracted transaction years to support time-based sales analysis",
+      "Joined payment and cluster data to evaluate sales performance across customer clusters",
+      "Applied SQL aggregation, filtering, grouping, sorting, date extraction, and JOIN operations to derive meaningful insights",
+    ],
+
+    progressImages: [
+      sqlAnalysisQueryResult1,
+      sqlAnalysisQueryResult2,
+    ],
+
+    resultImage: "",
+    results:
+      "A structured SQL-based transaction analysis that identified high-value customers and provided insights into annual sales performance across customer clusters, demonstrating the ability to transform raw transaction data into actionable business insights.",
+
+    githubLink: null,
+
+    demoLink: null,
+  },
+},
 ];
 
 // ============================================================
