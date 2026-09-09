@@ -70,11 +70,11 @@ export default function ProjectCard({ project, onOpenModal }) {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col flex-1 p-5 gap-3 text-justify">
+      <div className="flex flex-col flex-1 p-5 gap-3">
         <h3 className="text-white font-semibold text-base leading-snug group-hover:text-blue-300 transition-colors">
           {project.title}
         </h3>
-        <p className="text-slate-400 text-sm leading-relaxed flex-1">
+        <p className="text-slate-400 text-sm leading-relaxed flex-1 text-justify">
           {project.shortDescription}
         </p>
 
