@@ -68,9 +68,15 @@ import netflixersRobustDiagramEditAkun from "../assets/images/netflixers/Robustn
 import netflixersError from "../assets/images/netflixers/error.png";
 import netflixersInspect from "../assets/images/netflixers/inspect.png";
 import netflixersNotification from "../assets/images/netflixers/notification_process.png";
-// sql analysis project images
-import sqlAnalysisQueryResult1 from "../assets/images/sql/1.png";
-import sqlAnalysisQueryResult2 from "../assets/images/sql/2.png";
+// sql and excel analysis project images\
+import sqlExcelThumbnail from "../assets/images/sql_excel/thumbnail.png";
+import sqlAnalysisQueryResult1 from "../assets/images/sql_excel/1.png";
+import sqlAnalysisQueryResult2 from "../assets/images/sql_excel/2.png";
+import sqlAnalysisQueryResult3 from "../assets/images/sql_excel/3.png";
+import sqlAnalysisQueryResult4 from "../assets/images/sql_excel/4.png";
+import sqlAnalysisQueryResult5 from "../assets/images/sql_excel/5.png";
+import excelAnalysisResult1 from "../assets/images/sql_excel/vlookup.png";
+import excelAnalysisResult2 from "../assets/images/sql_excel/output.png";
 
 export const projects = [
   {
@@ -155,6 +161,118 @@ export const projects = [
   },
   {
     id: 3,
+
+    title: "Sales & Transaction Data Analysis",
+
+    shortDescription:
+      "Analyzed sales and transaction data using SQL and Excel to identify high-value customers, evaluate sales performance, and uncover business insights from transactional data.",
+
+    category: "Data Analytics",
+
+    techStack: [
+      "Data Analytics",
+      "Microsoft Excel",
+      "SQL",
+      "PostgreSQL",
+      "DBeaver",
+      "PivotTable",
+      "VLOOKUP",
+      "XLOOKUP",
+      "Data Cleaning",
+      "Data Aggregation",
+      "Data Filtering",
+      "Data Joining",
+    ],
+
+    thumbnail: sqlExcelThumbnail,
+
+    color: "#3b82f6",
+
+    detail: {
+      problem:
+        "The datasets contain transactional, customer, product, sales, and shipping information that can be analyzed to understand customer spending behavior, product performance, sales distribution, and operational costs. Without proper analysis, it can be difficult to identify high-value customers, evaluate sales performance, and extract meaningful business insights from raw data.",
+
+      objective:
+        "Analyzed 10,000+ transactional and sales data using SQL and Microsoft Excel to identify high-value customers, evaluate sales and product performance, analyze shipping costs, and derive actionable business insights.",
+
+      process:
+        "Data exploration → Data cleaning and transformation → SQL transaction analysis → Customer spending analysis → Product and shipping analysis → Excel lookup and PivotTable analysis → Sales performance comparison → Business insight generation.",
+
+      tools: [
+        "Microsoft Excel",
+        "SQL",
+        "PostgreSQL",
+        "DBeaver",
+        "PivotTable",
+        "VLOOKUP",
+        "XLOOKUP",
+        "Data Cleaning",
+        "Data Aggregation",
+        "Data Filtering",
+        "Data Joining",
+      ],
+
+      projects: [
+        {
+          title: "SQL Transaction & Sales Analysis",
+
+          description:
+            "Analyzed 10,000+transaction and customer data using PostgreSQL to identify high-value customers and evaluate sales performance across customer clusters and years.",
+
+          keyContributions: [
+            "Analyzed transaction data using PostgreSQL and DBeaver to answer business-oriented analytical questions",
+            "Filtered transaction records to include only successful transactions",
+            "Calculated total customer spending using SUM() and GROUP BY",
+            "Identified and ranked the top 10 users based on total transaction spending",
+            "Extracted transaction years to support time-based sales analysis",
+            "Joined transaction and customer cluster data to compare annual sales performance",
+            "Analyzed total and average shipping costs across cities",
+            "Identified the top-selling products based on total units sold",
+            "Applied SQL aggregation, filtering, grouping, sorting, date extraction, and JOIN operations",
+          ],
+        },
+
+        {
+          title: "Excel Sales & Data Analysis",
+
+          description:
+            "Analyzed sales transaction data using Microsoft Excel to clean categorical data, perform lookups, and evaluate sales performance using PivotTables.",
+
+          keyContributions: [
+            "Cleaned and standardized transaction categories and status values",
+            "Used VLOOKUP and XLOOKUP to transform raw status and category values into standardized categories",
+            "Created PivotTables to summarize quantity and sales performance",
+            "Analyzed transaction quantity based on cleaned order status",
+            "Compared total sales across different cities",
+            "Compared total sales across product categories",
+            "Identified cities, categories, and transaction statuses with notable sales and quantity performance",
+            "Used Excel aggregation and PivotTable analysis to transform transactional data into business insights",
+          ],
+        },
+      ],
+
+      progressImages: [
+        sqlAnalysisQueryResult1,
+        sqlAnalysisQueryResult2,
+        sqlAnalysisQueryResult3,
+        sqlAnalysisQueryResult4,
+        sqlAnalysisQueryResult5,
+        excelAnalysisResult1,
+        excelAnalysisResult2,
+      ],
+
+      resultImage: "",
+
+      results:
+        "Completed two complementary data analysis projects using SQL and Microsoft Excel. The SQL analysis demonstrated the ability to query and aggregate transactional data to identify high-value customers, top-selling products, and shipping cost patterns, while the Excel analysis demonstrated practical skills in data cleaning, VLOOKUP, PivotTables, and sales performance analysis. Together, the projects demonstrate the ability to transform raw business data into structured insights using both SQL and spreadsheet-based analytical tools.",
+
+      githubLink: null,
+
+      demoLink: null,
+    },
+  },
+  {
+    id: 4,
     title: "Cisco Network Configuration & Troubleshooting",
     shortDescription:
       "Enterprise network simulation using Cisco Packet Tracer with VLAN, DHCP, NAT, ACL, and network troubleshooting across multiple network segments.",
@@ -217,7 +335,7 @@ export const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "Redesign of PRESISI Polri Mobile App",
     shortDescription:
       "Redesigned the SIAPkerja job application platform interface to reduce friction, improve task efficiency, and enhance overall user experience.",
@@ -249,7 +367,7 @@ export const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Student Academic Performance Pipeline & Interactive Dashboard",
     shortDescription:
       "Built an end-to-end data pipeline that transforms raw academic records into an interactive dashboard for analyzing student performance.",
@@ -288,7 +406,7 @@ export const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "PinjamBuku - Library Web App",
     shortDescription:
       "Frontend Laravel web application for library book borrowing management with CRUD operations, authentication, and MySQL backend.",
@@ -325,7 +443,7 @@ export const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "DapuRame Recipe & Nutrition Mobile App",
     shortDescription:
       "A mobile app for discovering recipes and tracking nutritional information.",
@@ -357,7 +475,7 @@ export const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     title: "Business Process Modeling – Customer Order Fulfillment",
     shortDescription:
       "Modeled an end-to-end customer order fulfillment process using BPMN to visualize inventory verification, production, customization, payment, and delivery workflows.",
@@ -389,7 +507,7 @@ export const projects = [
     },
   },
   {
-    id: 9,
+    id: 10,
 
     title: "Netflixers – Netflix Sharing Account Management System",
 
@@ -472,74 +590,6 @@ export const projects = [
       demoLink: null,
     },
   },
-  {
-  id: 10,
-
-  title: "Customer Transaction & Sales Analysis",
-
-  shortDescription:
-    "Analyzed transaction data using PostgreSQL to identify high-value customers and evaluate annual sales performance across customer clusters.",
-
-  category: "Data Analytics",
-
-  techStack: [
-    "Data Analytics",
-    "SQL",
-    "PostgreSQL",
-    "DBeaver",
-    "Data Aggregation",
-    "Data Filtering",
-    "Data Joining",
-  ],
-
-  thumbnail: sqlAnalysisQueryResult1,
-
-  color: "#3b82f6",
-
-  detail: {
-    problem:
-      "The transaction dataset contains customer payment records and cluster information that can be analyzed to understand customer spending behavior and sales performance. Without proper analysis, it can be difficult to identify high-value customers and evaluate sales performance across different customer clusters and years.",
-
-    objective:
-      "Analyze successful transaction data using SQL to identify the top-spending users and evaluate annual sales performance across customer clusters.",
-
-    process:
-      "Transaction data exploration → Filter successful transactions → Aggregate customer spending → Rank top-spending users → Extract transaction year → Join transaction and cluster data → Compare annual sales performance.",
-
-    tools: [
-      "Data Analytics",
-      "SQL",
-      "PostgreSQL",
-      "DBeaver",
-      "Data Aggregation",
-      "Data Filtering",
-      "Data Joining",
-    ],
-
-    keyContributions: [
-      "Analyzed transaction data using PostgreSQL and DBeaver to answer business-oriented analytical questions",
-      "Filtered transaction records to include only successful payments",
-      "Calculated total customer spending using SUM() and GROUP BY",
-      "Identified and ranked the top 10 users based on total transaction spending",
-      "Extracted transaction years to support time-based sales analysis",
-      "Joined payment and cluster data to evaluate sales performance across customer clusters",
-      "Applied SQL aggregation, filtering, grouping, sorting, date extraction, and JOIN operations to derive meaningful insights",
-    ],
-
-    progressImages: [
-      sqlAnalysisQueryResult1,
-      sqlAnalysisQueryResult2,
-    ],
-
-    resultImage: "",
-    results:
-      "A structured SQL-based transaction analysis that identified high-value customers and provided insights into annual sales performance across customer clusters, demonstrating the ability to transform raw transaction data into actionable business insights.",
-
-    githubLink: null,
-
-    demoLink: null,
-  },
-},
 ];
 
 // ============================================================
