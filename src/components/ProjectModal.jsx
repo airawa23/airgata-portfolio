@@ -65,7 +65,11 @@ export default function ProjectModal({ project, onClose }) {
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-      onClick={onClose}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
@@ -107,7 +111,7 @@ export default function ProjectModal({ project, onClose }) {
               title="Problem"
               iconColor="text-amber-400"
             >
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed text-justify">
                 {detail.problem}
               </p>
             </Section>
@@ -116,7 +120,7 @@ export default function ProjectModal({ project, onClose }) {
           {/* Objective */}
           {detail.objective && (
             <Section icon={Target} title="Objective" iconColor="text-blue-400">
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed text-justify">
                 {detail.objective}
               </p>
             </Section>
@@ -153,9 +157,9 @@ export default function ProjectModal({ project, onClose }) {
                 {detail.keyContributions.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2.5 text-slate-400 text-sm"
+                    className="flex items-start gap-2.5 text-slate-400 text-sm leading-relaxed"
                   >
-                    <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-violet-500" />
+                    <span className="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-violet-500 " />
                     {item}
                   </li>
                 ))}
@@ -175,7 +179,7 @@ export default function ProjectModal({ project, onClose }) {
                   title="Progress"
                   iconColor="text-indigo-400"
                 >
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <p className="text-slate-300 text-sm leading-relaxed text-justify">
                     {detail.process}
                   </p>
                 </Section>
@@ -208,7 +212,7 @@ export default function ProjectModal({ project, onClose }) {
                   <p className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2">
                     Results
                   </p>
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <p className="text-slate-300 text-sm leading-relaxed text-justify">
                     {detail.results}
                   </p>
                   {detail.resultImage && (
@@ -255,7 +259,11 @@ export default function ProjectModal({ project, onClose }) {
       {selectedImage && (
         <div
           className="fixed inset-0 z-[110] flex items-center justify-center p-5 bg-black/85 backdrop-blur-sm"
-          onClick={() => setSelectedImage(null)}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setSelectedImage(null);
+            }
+          }}
         >
           <button
             type="button"

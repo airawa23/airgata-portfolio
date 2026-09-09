@@ -212,59 +212,40 @@ export const projects = [
         "Data Joining",
       ],
 
-      projects: [
-        {
-          title: "SQL Transaction & Sales Analysis",
+      title: "SQL & Excel Sales Analysis",
 
-          description:
-            "Analyzed 10,000+transaction and customer data using PostgreSQL to identify high-value customers and evaluate sales performance across customer clusters and years.",
+      description:
+        "Analyzed 10,000+ transaction records using PostgreSQL and Microsoft Excel to identify high-value customers, evaluate sales performance, and uncover business insights.",
 
-          keyContributions: [
-            "Analyzed transaction data using PostgreSQL and DBeaver to answer business-oriented analytical questions",
-            "Filtered transaction records to include only successful transactions",
-            "Calculated total customer spending using SUM() and GROUP BY",
-            "Identified and ranked the top 10 users based on total transaction spending",
-            "Extracted transaction years to support time-based sales analysis",
-            "Joined transaction and customer cluster data to compare annual sales performance",
-            "Analyzed total and average shipping costs across cities",
-            "Identified the top-selling products based on total units sold",
-            "Applied SQL aggregation, filtering, grouping, sorting, date extraction, and JOIN operations",
-          ],
-        },
-
-        {
-          title: "Excel Sales & Data Analysis",
-
-          description:
-            "Analyzed sales transaction data using Microsoft Excel to clean categorical data, perform lookups, and evaluate sales performance using PivotTables.",
-
-          keyContributions: [
-            "Cleaned and standardized transaction categories and status values",
-            "Used VLOOKUP and XLOOKUP to transform raw status and category values into standardized categories",
-            "Created PivotTables to summarize quantity and sales performance",
-            "Analyzed transaction quantity based on cleaned order status",
-            "Compared total sales across different cities",
-            "Compared total sales across product categories",
-            "Identified cities, categories, and transaction statuses with notable sales and quantity performance",
-            "Used Excel aggregation and PivotTable analysis to transform transactional data into business insights",
-          ],
-        },
+      keyContributions: [
+        "Analyzed 10,000+ transaction records using PostgreSQL, DBeaver, and Microsoft Excel",
+        "Filtered transaction records to include only successful transactions",
+        "Cleaned and standardized transaction status and product category data using Excel",
+        "Used VLOOKUP and XLOOKUP to transform raw status and category values into standardized classifications",
+        "Calculated total customer spending using SQL SUM() and GROUP BY",
+        "Identified and ranked the top 10 users based on total transaction spending",
+        "Identified top-selling products based on total units sold",
+        "Analyzed total and average shipping costs across cities",
+        "Created PivotTables to analyze transaction quantity and total sales performance",
+        "Compared total sales across cities and product categories",
+        "Extracted transaction years and joined transaction with customer cluster data to compare annual sales performance",
+        "Applied SQL aggregation, filtering, grouping, sorting, date extraction, and JOIN operations to derive business insights",
       ],
 
       progressImages: [
-        sqlAnalysisQueryResult1,
-        sqlAnalysisQueryResult2,
+        excelAnalysisResult1,
+        excelAnalysisResult2,
         sqlAnalysisQueryResult3,
         sqlAnalysisQueryResult4,
         sqlAnalysisQueryResult5,
-        excelAnalysisResult1,
-        excelAnalysisResult2,
+        sqlAnalysisQueryResult1,
+        sqlAnalysisQueryResult2,
       ],
 
       resultImage: "",
 
       results:
-        "Completed two complementary data analysis projects using SQL and Microsoft Excel. The SQL analysis demonstrated the ability to query and aggregate transactional data to identify high-value customers, top-selling products, and shipping cost patterns, while the Excel analysis demonstrated practical skills in data cleaning, VLOOKUP, PivotTables, and sales performance analysis. Together, the projects demonstrate the ability to transform raw business data into structured insights using both SQL and spreadsheet-based analytical tools.",
+        "Completed two complementary data analysis projects using SQL and Microsoft Excel. The SQL analysis demonstrated the ability to query and aggregate transactional data to identify high-value customers, top-selling products, and shipping cost patterns, while the Excel analysis demonstrated practical skills in data cleaning, VLOOKUP, XLOOKUP, and PivotTables. Together, the projects demonstrate the ability to transform raw business data into structured insights using both SQL and spreadsheet-based analytical tools.",
 
       githubLink: null,
 
