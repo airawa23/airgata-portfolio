@@ -77,6 +77,16 @@ import sqlAnalysisQueryResult4 from "../assets/images/sql_excel/4.png";
 import sqlAnalysisQueryResult5 from "../assets/images/sql_excel/5.png";
 import excelAnalysisResult1 from "../assets/images/sql_excel/vlookup.png";
 import excelAnalysisResult2 from "../assets/images/sql_excel/output.png";
+// sentiment analysis project images
+import sentimentAnalysisThumbnail from "../assets/images/inDrive_sentimentAnalysis/thumbnail.png";
+import sentimentScrapingResult from "../assets/images/inDrive_sentimentAnalysis/scrapping.png";
+import sentimentTokenizeResult from "../assets/images/inDrive_sentimentAnalysis/tokenize.png";
+import sentimentWordCloudPositive from "../assets/images/inDrive_sentimentAnalysis/wordCloudPositif.png";
+import sentimentWordCloudNegative from "../assets/images/inDrive_sentimentAnalysis/wordCloudNegatif.png";
+import sentimentStopwordRemovalResult from "../assets/images/inDrive_sentimentAnalysis/stopword_removal.png";
+import sentimentLabeling from "../assets/images/inDrive_sentimentAnalysis/labeling_data.png";
+import sentimentAnalysisResult from "../assets/images/inDrive_sentimentAnalysis/result.png";
+
 
 export const projects = [
   {
@@ -571,6 +581,105 @@ export const projects = [
       demoLink: null,
     },
   },
+  {
+    id: 11,
+
+    title: "InDrive User Review Sentiment Analysis",
+
+    shortDescription:
+      "Built an NLP-based sentiment analysis pipeline to classify InDrive user reviews using text preprocessing, TF-IDF feature extraction, and multiple machine learning classification algorithms.",
+
+    category: "Data Analytics",
+
+    techStack: [
+      "Data Analytics",
+      "Natural Language Processing",
+      "Machine Learning",
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "NLTK",
+      "Sastrawi",
+      "TF-IDF",
+      "Google Play Scraper",
+      "Data Cleaning",
+      "Text Preprocessing",
+      "Tokenization",
+      "Stopword Removal",
+      "Stemming",
+      "Exploratory Data Analysis",
+      "Sentiment Analysis",
+    ],
+
+    thumbnail: sentimentAnalysisThumbnail,
+
+    color: "#3b82f6",
+
+    detail: {
+      problem:
+        "User reviews contain valuable feedback about application services and features, but raw textual reviews are difficult to analyze manually at scale. A structured NLP pipeline was needed to preprocess user reviews, identify sentiment patterns, and evaluate machine learning models for automated sentiment classification.",
+
+      objective:
+        "Analyzed 1,568 unique InDrive user reviews using Python and NLP techniques to preprocess review text, explore sentiment distribution, extract TF-IDF features, and compare multiple machine learning algorithms for positive and negative sentiment classification.",
+
+      process:
+        "Google Play review scraping → Data preparation → Duplicate removal → Text cleaning → Word normalization → Tokenization → Stopword removal → Stemming → Exploratory data analysis → Rating-based sentiment labeling → TF-IDF feature extraction → Train-test split → Model training → Model evaluation and comparison.",
+
+      tools: [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "NLTK",
+        "Sastrawi",
+        "Google Play Scraper",
+        "TF-IDF",
+        "Data Cleaning",
+        "Tokenization",
+        "Stopword Removal",
+        "Stemming",
+        "Exploratory Data Analysis",
+        "Sentiment Analysis",
+      ],
+
+      title: "NLP-Based InDrive Sentiment Analysis",
+
+      description:
+        "Developed an NLP pipeline to analyze 1,568 unique InDrive user reviews and classify sentiment using TF-IDF and multiple machine learning algorithms.",
+
+      keyContributions: [
+        "Scraped 2,000 InDrive user reviews from Google Play using Google Play Scraper",
+        "Removed duplicate reviews based on review text, resulting in 1,568 unique reviews",
+        "Cleaned review text by removing URLs, HTML tags, symbols, numbers, and applying lowercase transformation",
+        "Normalized informal Indonesian words into standardized forms using an Excel-based word dictionary",
+        "Applied tokenization, Indonesian stopword removal, and stemming using NLTK and Sastrawi",
+        "Performed exploratory data analysis to examine rating distribution and review patterns",
+        "Created positive and negative sentiment labels based on user ratings, with ratings 4–5 classified as positive and ratings 1–3 classified as negative",
+        "Analyzed 963 positive and 605 negative labeled reviews",
+        "Extracted text features using TF-IDF, generating 2,590 features from the preprocessed reviews",
+        "Split the dataset into 80% training data and 20% testing data using stratified sampling",
+        "Compared Multinomial Naive Bayes, Random Forest, Logistic Regression, SVM, KNN, and Extra Trees classification algorithms",
+        "Achieved the highest recorded accuracy of 81% and macro F1-score of 0.83 using Extra Trees",
+      ],
+
+      progressImages: [
+        sentimentScrapingResult,
+        sentimentTokenizeResult,
+        sentimentStopwordRemovalResult,
+        sentimentWordCloudPositive,
+        sentimentWordCloudNegative,
+        sentimentLabeling,
+      ],
+
+      resultImage: sentimentAnalysisResult,
+
+      results:
+        "Completed an end-to-end sentiment analysis pipeline for InDrive user reviews, covering data collection, text preprocessing, exploratory analysis, TF-IDF feature extraction, and machine learning classification. Evaluated six machine learning models and achieved the best recorded performance with Extra Trees at 81% accuracy and 0.83 F1-score, with a cross-validation F1-score of 0.83. The project demonstrates the application of NLP and machine learning techniques to transform unstructured user feedback into structured sentiment insights.",
+
+      githubLink: null,
+
+      demoLink: null,
+    },
+  },
 ];
 
 // ============================================================
@@ -588,7 +697,7 @@ export const skillGroups = [
       "Pandas",
       "Power BI",
       "BPMN.io",
-      "Erd",
+      "ERD Modeling",
       "Looker Studio",
       "Microsoft Excel",
       "SQL",
@@ -596,6 +705,18 @@ export const skillGroups = [
       "DBeaver",
       "Pentaho",
       "ETL",
+      "Data Cleaning",
+      "Data Aggregation",
+      "Data Filtering",
+      "Data Joining",
+      "Data Visualization",
+      "Natural Language Processing",
+      "Machine Learning",
+      "Sastrawi",
+      "NLTK",
+      "TF-IDF",
+      "Google Play Scraper",
+      "Sentiment Analysis",
     ],
   },
   {
