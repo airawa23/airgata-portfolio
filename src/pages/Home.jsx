@@ -7,52 +7,56 @@ import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Certifications from "../components/Certifications";
+import ElegantDarkPattern from "../components/ui/ElegantDarkPattern";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
-      <Navbar />
-      <main>
-        <Hero />
+    <div className="relative isolate min-h-screen">
+      <ElegantDarkPattern />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
 
-        {/* Divider */}
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="border-t border-white/[0.05]" />
-        </div>
+          {/* Divider */}
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="border-t border-white/[0.05]" />
+          </div>
 
-        <About />
+          <About />
 
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="border-t border-white/[0.05]" />
-        </div>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="border-t border-white/[0.05]" />
+          </div>
 
-        <Skills />
+          <Skills />
 
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="border-t border-white/[0.05]" />
-        </div>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="border-t border-white/[0.05]" />
+          </div>
 
-        <Certifications />
+          <Certifications />
 
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="border-t border-white/[0.05]" />
-        </div>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="border-t border-white/[0.05]" />
+          </div>
 
-        <Projects />
+          <Projects />
 
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="border-t border-white/[0.05]" />
-        </div>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="border-t border-white/[0.05]" />
+          </div>
 
-        <Experience />
+          <Experience />
 
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="border-t border-white/[0.05]" />
-        </div>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="border-t border-white/[0.05]" />
+          </div>
 
-        <Contact />
-      </main>
-      <Footer />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
