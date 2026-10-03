@@ -31,7 +31,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
-          Transfrom Data into{" "}
+          Transform Data into{" "}
           <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-white bg-clip-text text-transparent">
             Insights
           </span>

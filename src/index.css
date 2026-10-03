@@ -45,6 +45,7 @@ body {
 }
 
 .elegant-dark-pattern__glow,
+.elegant-dark-pattern__stars,
 .elegant-dark-pattern__orbit {
   position: absolute;
 }
@@ -63,13 +64,78 @@ body {
   width: min(500px, 72vw);
   filter: blur(100px);
   opacity: 1;
-  background: radial-gradient(circle, rgb(37 99 235 / 30%) 0%, rgba(44, 102, 228, 0.186) 70%);
+  background: radial-gradient(
+    circle,
+    rgb(37 99 235 / 30%) 0%,
+    rgba(44, 102, 228, 0.186) 70%
+  );
 }
 
 .elegant-dark-pattern__glow--magenta {
   right: -31vw;
   top: 12vh;
-  background: radial-gradient(circle, rgb(255 20 160 / 70%) 0%, rgb(255 20 160 / 0%) 69%);
+  background: radial-gradient(
+    circle,
+    rgb(255 20 160 / 70%) 0%,
+    rgb(255 20 160 / 0%) 69%
+  );
+}
+
+.elegant-dark-pattern__stars {
+  inset: 0;
+  opacity: 0.62;
+  background-image:
+    radial-gradient(
+      circle at 8% 18%,
+      rgb(219 234 254 / 80%) 0 1px,
+      transparent 1.6px
+    ),
+    radial-gradient(
+      circle at 17% 72%,
+      rgb(255 255 255 / 65%) 0 1px,
+      transparent 1.6px
+    ),
+    radial-gradient(
+      circle at 27% 35%,
+      rgb(191 219 254 / 75%) 0 1.2px,
+      transparent 1.8px
+    ),
+    radial-gradient(
+      circle at 38% 84%,
+      rgb(255 255 255 / 60%) 0 1px,
+      transparent 1.6px
+    ),
+    radial-gradient(
+      circle at 48% 16%,
+      rgb(224 231 255 / 70%) 0 1px,
+      transparent 1.6px
+    ),
+    radial-gradient(
+      circle at 57% 61%,
+      rgb(255 255 255 / 75%) 0 1.2px,
+      transparent 1.8px
+    ),
+    radial-gradient(
+      circle at 68% 28%,
+      rgb(191 219 254 / 70%) 0 1px,
+      transparent 1.6px
+    ),
+    radial-gradient(
+      circle at 77% 79%,
+      rgb(255 255 255 / 65%) 0 1px,
+      transparent 1.6px
+    ),
+    radial-gradient(
+      circle at 88% 43%,
+      rgb(224 231 255 / 75%) 0 1.2px,
+      transparent 1.8px
+    ),
+    radial-gradient(
+      circle at 94% 12%,
+      rgb(255 255 255 / 60%) 0 1px,
+      transparent 1.6px
+    );
+  pointer-events: none;
 }
 
 .elegant-dark-pattern__orbit {
