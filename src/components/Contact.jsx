@@ -55,10 +55,10 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-24 px-6 overflow-hidden">
       {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-[-5%] left-[-5%] w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[100px]" />
         <div className="absolute top-[-5%] right-[-5%] w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[90px]" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section header */}

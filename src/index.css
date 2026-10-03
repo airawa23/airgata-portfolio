@@ -57,10 +57,13 @@ body {
   opacity: 0.68;
 }
 
-.elegant-dark-pattern__glow--violet {
-  left: -23vw;
-  bottom: -31vw;
-  background: radial-gradient(circle, rgb(112 55 255 / 82%) 0%, rgb(91 35 255 / 0%) 70%);
+.elegant-dark-pattern__glow--blue {
+  left: -5%;
+  bottom: -5%;
+  width: min(500px, 72vw);
+  filter: blur(100px);
+  opacity: 1;
+  background: radial-gradient(circle, rgb(37 99 235 / 30%) 0%, rgba(44, 102, 228, 0.186) 70%);
 }
 
 .elegant-dark-pattern__glow--magenta {
@@ -96,9 +99,11 @@ body {
     filter: blur(54px);
   }
 
-  .elegant-dark-pattern__glow--violet {
-    left: -48vw;
-    bottom: -44vw;
+  .elegant-dark-pattern__glow--blue {
+    left: -5%;
+    bottom: -5%;
+    width: 72vw;
+    filter: blur(72px);
   }
 
   .elegant-dark-pattern__glow--magenta {
