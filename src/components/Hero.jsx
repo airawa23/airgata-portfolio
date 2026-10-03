@@ -32,12 +32,12 @@ export default function Hero() {
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
           Turning Data into{" "}
-          <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-white bg-clip-text text-transparent">
             Insights
           </span>
           , <br className="hidden md:block" />
           Ideas into{" "}
-          <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
             Experiences
           </span>
         </h1>
@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <button
             onClick={scrollToProjects}
-            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-sm hover:from-blue-400 hover:to-indigo-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5"
+            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-800 text-white font-semibold text-sm hover:from-blue-400 hover:to-indigo-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5"
           >
             View Projects
             <ExternalLink
