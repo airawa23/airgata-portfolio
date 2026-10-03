@@ -37,7 +37,7 @@ export default function Hero() {
           </span>
           , <br className="hidden md:block" />
           Insights into{" "}
-          <span className="bg-gradient-to-r from-pink-700 to-white bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-indigo-600 to-white bg-clip-text text-transparent">
             Impact
           </span>
         </h1>
