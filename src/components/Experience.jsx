@@ -26,11 +26,12 @@ export default function Experience() {
           <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-white/[0.07] hidden md:block" />
 
           <div className="space-y-6">
-            {experiences.map((exp, idx) => {
+            {experiences.map((exp) => {
               const typeStyle =
                 typeColors[exp.type] ||
                 "bg-slate-500/10 text-slate-400 border-slate-500/20";
-              const experienceImages = exp.images || (exp.image ? [exp.image] : []);
+              const experienceImages =
+                exp.images || (exp.image ? [exp.image] : []);
               return (
                 <div key={exp.id} className="relative md:pl-20 group">
                   {/* Timeline dot */}
@@ -40,7 +41,7 @@ export default function Experience() {
                   />
 
                   {/* Card */}
-                  <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/[0.07] backdrop-blur-sm hover:border-white/[0.12] hover:-translate-y-0.5 transition-all duration-300">
+                  <div className="p-6 rounded-2xl bg-black/[0.2] border border-white/[0.07] backdrop-blur-sm hover:border-white/[0.12] hover:-translate-y-0.5 transition-all duration-300">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                       <div>
                         <div className="flex flex-wrap items-center gap-2 mb-1">

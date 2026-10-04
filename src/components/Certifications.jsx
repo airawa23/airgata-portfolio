@@ -109,7 +109,7 @@ export default function Certifications() {
             return (
               <article
                 key={certificate.id}
-                className="group overflow-hidden rounded-2xl bg-white/[0.02] border border-white/[0.07] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.16] hover:shadow-xl hover:shadow-black/20"
+                className="group overflow-hidden rounded-2xl bg-black/[0.2] border border-white/[0.07] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.16] hover:shadow-xl hover:shadow-black/20"
               >
                 <div
                   className={`relative aspect-[16/10] overflow-hidden border-b border-white/[0.07] bg-gradient-to-br ${accent}`}

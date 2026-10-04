@@ -1,4 +1,4 @@
-import { BarChart3, Palette, Code2, Briefcase } from "lucide-react";
+import { BarChart3, Palette, Code2, Footprints } from "lucide-react";
 import profileImage4 from "../assets/ise.JPG";
 import { Network } from "lucide-react";
 
@@ -30,6 +30,30 @@ const interests = [
     description:
       "Building full-stack web and mobile applications using modern frameworks and tools.",
     color: "cyan",
+  },
+];
+
+const featuredExperiences = [
+  {
+    title: "Data Analysis Bootcamp — KarirNex",
+    role: "Participant",
+    period: "July 2026",
+    summary:
+      "Cleaned 10,000+ transaction records and used Excel lookups and Pivot Tables to summarize sales and customer trends.",
+  },
+  {
+    title: "NusaData Explorer — Digital Equity Dashboard",
+    role: "Dashboard Engineer",
+    period: "July 2025 – February 2026",
+    summary:
+      "Combined 5+ BPS datasets in Looker Studio and built interactive maps, trend analysis, and provincial rankings.",
+  },
+  {
+    title: "Student Grade Data ETL & Visualization",
+    role: "Final Course Project",
+    period: "October – December 2024",
+    summary:
+      "Built an ETL pipeline for 20,000+ student records and a Power BI dashboard for grade and graduation-rate analysis.",
   },
 ];
 
@@ -67,57 +91,44 @@ export default function About() {
             />
           </div>
 
-          {/* About text */}
-          <div className="space-y-5">
-            <p className="text-slate-300 text-base leading-relaxed text-justify">
-              I&apos;m an{" "}
-              <span className="text-white font-medium">
-                Information Systems
-              </span>{" "}
-              Graduate at Institut Teknologi Sepuluh Nopember (ITS), passionate
-              about bridging{" "}
+          <div>
+            <p className="text-slate-400 text-base leading-relaxed text-justify">
+              Information Systems graduate at ITS with hands-on experience in {" "}
               <span className="text-blue-400 font-medium">
-                data, networking, and technology
-              </span>
-              .
-            </p>
-            <p className="text-slate-400 text-base leading-relaxed text-justify">
-              My academic and project experience has equipped me with a solid
-              foundation in network configuration, systems analysis, database
-              management, software engineering, and data analytics. I have
-              experience working with data through ETL processes, dashboard
-              development, and data visualization, using tools such as Power BI
-              and Looker Studio.
-            </p>
-            <p className="text-slate-400 text-base leading-relaxed text-justify">
-              I&apos;m particularly drawn to roles where I can leverage data and
-              technology to support decision-making, analyze business processes,
-              and improve operational performance. I thrive in collaborative
-              environments, enjoy solving problems from different perspectives,
-              and am eager to contribute across technical and business-oriented
-              projects.
+                data analytics, ETL, and dashboard development
+              </span>{". "}
+              Bridging data, technology, and business to transform raw data into clear information and
+              actionable insights.
             </p>
 
-            {/* Quick stats */}
-            <div className="grid grid-cols-2 gap-4 pt-2">
-              {[
-                { value: "5+", label: "Projects Completed" },
-                { value: "4", label: "Skill Domains" },
-                { value: "3+", label: "Organizations" },
-                { value: "2024", label: "Active Since" },
-              ].map(({ value, label }) => (
-                <div
-                  key={label}
-                  className="p-4 rounded-xl bg-white/[0.03] border border-white/[0.06]"
-                >
-                  <div className="text-2xl font-bold text-white mb-1">
-                    {value}
-                  </div>
-                  <div className="text-xs text-slate-500 font-medium">
-                    {label}
-                  </div>
-                </div>
-              ))}
+            <div className="mt-8">
+              <h3 className="mb-5 flex items-center gap-3 text-xl font-semibold text-white">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-400/10">
+                  <Footprints size={19} className="text-blue-300" />
+                </span>
+                Experience
+              </h3>
+              <div className="relative space-y-6 before:absolute before:bottom-2 before:left-[7px] before:top-2 before:w-px before:bg-white/[0.12]">
+                {featuredExperiences.map((experience) => (
+                  <article key={experience.title} className="relative pl-7">
+                    <span className="absolute left-0 top-1.5 h-4 w-4 rounded-full border-4 border-[#050d1a] bg-blue-400" />
+                    <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3">
+                      <h4 className="text-sm font-semibold text-white">
+                        {experience.title}
+                      </h4>
+                      <span className="shrink-0 text-xs text-slate-500">
+                        {experience.period}
+                      </span>
+                    </div>
+                    <p className="mt-0.5 text-xs font-medium text-blue-300">
+                      {experience.role}
+                    </p>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                      {experience.summary}
+                    </p>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
 
