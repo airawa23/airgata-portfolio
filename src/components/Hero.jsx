@@ -23,12 +23,6 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 text-center">
-        {/* Badge */}
-        {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] text-slate-400 text-sm font-medium mb-8 backdrop-blur-sm">
-          <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-          Information Systems Student · Data &amp; Technology
-        </div> */}
-
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
           Transform Data into{" "}
@@ -57,7 +51,7 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5">
           <button
             onClick={scrollToProjects}
             className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-800 text-white font-semibold text-sm hover:from-blue-400 hover:to-indigo-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5"
