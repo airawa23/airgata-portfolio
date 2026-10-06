@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Eye, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -14,7 +14,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const [visitorCountAvailable, setVisitorCountAvailable] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,33 +84,14 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="flex items-center gap-3">
-          <div
-            className="hidden md:flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-2 text-xs text-slate-300 backdrop-blur-sm"
-            title="Total visits to this portfolio"
-          >
-            <Eye size={14} className="text-blue-400" aria-hidden="true" />
-            {visitorCountAvailable ? (
-              <img
-                src="https://api.visitorbadge.io/api/visitors?path=airgata-portfolio&label=Visitors&labelColor=%230b1220&countColor=%233b82f6&style=flat"
-                alt="Total website visits"
-                onError={() => setVisitorCountAvailable(false)}
-                className="h-5 w-auto"
-              />
-            ) : (
-              <span>Visits unavailable</span>
-            )}
-          </div>
-
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden text-slate-400 hover:text-white transition-colors p-2 rounded-lg hover:bg-white/[0.06]"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
-        </div>
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden text-slate-400 hover:text-white transition-colors p-2 rounded-lg hover:bg-white/[0.06]"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
       </div>
 
       {/* Mobile dropdown */}
